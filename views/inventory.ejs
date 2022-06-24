@@ -1,0 +1,41 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <h1>Inventory</h1>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /login route -->
+          <form action="/update_profile" method="get">
+            <button type="submit" class="btn btn-dark">Update profile</button>
+          </form>
+          <br>
+
+          <form action="/forget_password" method="get">
+            <button type="submit" class="btn btn-dark">Change password</button>
+          </form>
+          <br>
+
+          <form action="/products" method="get">
+            <button type="submit" class="btn btn-dark">Products</button>
+          </form>
+          <br>
+
+          <form action="/categories" method="get">
+            <button type="submit" class="btn btn-dark">Categories</button>
+          </form>
+          <br>
+
+         
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,27 @@
+<%- include("partials/header"); -%>
+    <h1>Products</h1>
+
+    <% items.forEach(function(item){ %>
+
+        <h1>
+            <%=item.name%>
+        </h1>
+        <p>
+            <%=item.price%>
+        </p>
+        <p>
+            <%=item.quantity%>
+        </p>
+        <p>
+            <%=item.category%>
+        </p>
+
+        <p>
+            <%=item.product_id%>
+        </p>
+
+
+        <% }) %>
+
+
+            <%- include("partials/footer"); -%>

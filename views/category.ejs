@@ -1,0 +1,47 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <h1>Category</h1>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /login route -->
+          <form action="/create_category" method="get">
+            <button type="submit" class="btn btn-dark">Create category</button>
+          </form>
+          <br>
+
+          <form action="/update_category" method="get">
+            <button type="submit" class="btn btn-dark">update category</button>
+          </form>
+          <br>
+
+          <form action="/delete_category" method="get">
+            <button type="submit" class="btn btn-dark">delete</button>
+          </form>
+          <br>
+
+          <form action="/add_products_category" method="get">
+            <button type="submit" class="btn btn-dark">Add products to categories</button>
+          </form>
+          <br>
+
+
+          <form action="/list_categories" method="post">
+            <button type="submit" class="btn btn-dark">list Categories</button>
+          </form>
+          <br>
+
+         
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>
